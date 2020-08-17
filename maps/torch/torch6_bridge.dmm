@@ -4002,18 +4002,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
-"hK" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_eva_pump"
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/bridge/aft)
 "hL" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
