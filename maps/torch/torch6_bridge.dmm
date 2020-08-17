@@ -4224,51 +4224,8 @@
 /obj/effect/floor_decal/industrial/warning/fulltile,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"ip" = (
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	dir = 4;
-	frequency = 1379;
-	id_tag = "bridge_eva_airlock";
-	name = "Engineering Airlock Console";
-	pixel_x = -24;
-	pixel_y = 0;
-	req_access = list("ACCESS_MAINT");
-	tag_airpump = "bridge_eva_pump";
-	tag_chamber_sensor = "bridge_eva_sensor";
-	tag_exterior_door = "bridge_eva_outer";
-	tag_interior_door = "bridge_eva_inner"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_eva_pump"
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/bridge/aft)
 "iq" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/bridge/aft)
-"is" = (
-/obj/machinery/airlock_sensor{
-	frequency = 1379;
-	id_tag = "bridge_eva_sensor";
-	pixel_x = 24;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_eva_pump"
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 4
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "it" = (
@@ -4508,21 +4465,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"ja" = (
-/obj/machinery/oxygen_pump{
-	pixel_x = -32
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_eva_pump"
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/bridge/aft)
 "jc" = (
 /obj/structure/hygiene/drain,
 /turf/simulated/floor/tiled/freezer,
@@ -5483,34 +5425,6 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/hallway/primary/bridge/aft)
-"lR" = (
-/obj/machinery/airlock_sensor{
-	frequency = 1331;
-	id_tag = "aquila_shuttle_dock_sensor";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/item/device/radio/intercom{
-	dir = 1;
-	pixel_y = -28
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	!INVALID_VAR! = 1331;
-	id_tag = "aquila_shuttle_dock_pump"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 1
-	},
-/obj/effect/floor_decal/techfloor,
-/turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "lS" = (
 /obj/effect/floor_decal/scglogo{
@@ -10015,21 +9929,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
-"xg" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_eva_pump"
-	},
-/obj/machinery/oxygen_pump{
-	pixel_x = -32
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/bridge/aft)
 "xi" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -12240,33 +12139,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
-"Fc" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	!INVALID_VAR! = 1331;
-	id_tag = "aquila_shuttle_pump_out_external"
-	},
-/obj/machinery/airlock_sensor{
-	dir = 4;
-	frequency = 1331;
-	id_tag = "aquila_shuttle_sensor_external";
-	pixel_x = 25;
-	pixel_y = -6
-	},
-/obj/structure/handrai{
-	icon_state = "handrail";
-	dir = 8
-	},
-/obj/machinery/access_button{
-	command = "cycle_exterior";
-	frequency = 1331;
-	master_tag = "aquila_shuttle";
-	name = "exterior access button";
-	pixel_x = 23;
-	pixel_y = 6
-	},
-/turf/simulated/floor/airless,
-/area/aquila/airlock)
 "Ff" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -12685,27 +12557,6 @@
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"Hg" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	!INVALID_VAR! = 1331;
-	id_tag = "aquila_shuttle_pump_out_internal"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/machinery/oxygen_pump{
-	pixel_y = 32
-	},
-/obj/structure/handrai,
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/aquila/airlock)
 "Hh" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -13448,22 +13299,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"Jg" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
-	!INVALID_VAR! = 1331;
-	id_tag = "aquila_shuttle_pump"
-	},
-/obj/machinery/oxygen_pump{
-	pixel_y = 32
-	},
-/obj/structure/handrai,
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/aquila/airlock)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14050,28 +13885,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
-"Mc" = (
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	cycle_to_external_air = 1;
-	frequency = 1331;
-	id_tag = "aquila_shuttle";
-	pixel_x = 0;
-	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_AQUILA");
-	tag_exterior_sensor = "aquila_shuttle_sensor_external"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
-	!INVALID_VAR! = 1331;
-	id_tag = "aquila_shuttle_pump"
-	},
-/obj/structure/handrai,
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/aquila/airlock)
 "Mf" = (
 /obj/structure/table/woodentable_reinforced/walnut/maple,
 /turf/simulated/floor/wood/walnut,
@@ -14764,22 +14577,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
-"PB" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/airlock_sensor{
-	id_tag = "bridge_safe_sensor";
-	master_tag = "bridge_safe";
-	pixel_y = 22
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_safe_pump"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/crew_quarters/safe_room/bridge)
 "PC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15745,46 +15542,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/aquila/medical)
-"Tc" = (
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	!INVALID_VAR! = 1379;
-	id_tag = "solar_bridge_pump"
-	},
-/obj/machinery/light/small,
-/obj/machinery/oxygen_pump{
-	pixel_x = 0;
-	pixel_y = -32
-	},
-/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	frequency = 1379;
-	id_tag = "solar_bridge_airlock";
-	pixel_x = 2;
-	pixel_y = 24;
-	req_access = list("ACCESS_EXTERNAL");
-	tag_airpump = "solar_bridge_pump";
-	tag_chamber_sensor = "solar_bridge_sensor";
-	tag_exterior_door = "solar_bridge_outer";
-	tag_interior_door = "solar_bridge_inner"
-	},
-/obj/machinery/airlock_sensor{
-	frequency = 1379;
-	id_tag = "solar_bridge_sensor";
-	pixel_x = -12;
-	pixel_y = 24
-	},
-/obj/effect/floor_decal/techfloor,
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/auxsolarbridge)
 "Te" = (
 /turf/simulated/floor/carpet/blue2,
 /area/bridge/meeting_room)
@@ -16536,28 +16293,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
-"VY" = (
-/obj/machinery/button/alternate/door/bolts{
-	name = "safe room door-control";
-	pixel_x = 25;
-	pixel_y = -1;
-	id_tag = "bridgesafe_front"
-	},
-/obj/machinery/light_switch{
-	pixel_x = 24;
-	pixel_y = 8
-	},
-/obj/effect/floor_decal/techfloor/orange{
-	icon_state = "techfloororange_edges";
-	dir = 4
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	!INVALID_VAR! = 1379;
-	id_tag = "bridge_safe_pump_out_internal"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/crew_quarters/safe_room/bridge)
 "Wa" = (
 /obj/structure/bed/chair/padded/red{
 	icon_state = "chair_preview";
