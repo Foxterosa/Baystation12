@@ -253,3 +253,59 @@
 		/obj/item/device/taperecorder = 2,
 		/obj/item/weapon/storage/secure/briefcase = 2,
 	)
+
+
+/obj/structure/closet/secure_closet/magistrado
+	name = "armario del Magistrado"
+	req_access = list(access_magistrado)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
+
+/obj/structure/closet/secure_closet/magistrado/WillContain()
+	return list(
+		/obj/item/device/flash,
+		/obj/item/device/radio/headset/magistrado,
+		/obj/item/device/radio/headset/magistrado/alt,
+		/obj/item/device/camera_film = 2,
+		/obj/item/device/tape/random = 3,
+		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/weapon/rig/light/internalaffairs,
+		/obj/item/device/radio/headset/headset_com,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/under/suit_jacket/really_black,
+		/obj/item/clothing/suit/judgerobe,
+		/obj/item/clothing/head/peluca1,
+		/obj/item/clothing/head/peluca2,
+		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/weapon/gun/energy/mag_secure,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
+		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
+	)
+
+/obj/structure/closet/secure_closet/bs
+	name = "armario del Blueshield"
+	req_access = list(access_bs)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/command/bo
+
+/obj/structure/closet/secure_closet/bs/WillContain()
+	return list(
+		/obj/item/device/radio,
+		/obj/item/device/taperecorder,
+		/obj/item/device/flash,
+		/obj/item/weapon/melee/baton/loaded,
+		/obj/item/weapon/handcuffs,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/folder/blue,
+		/obj/item/modular_computer/tablet/lease/preset/command,
+		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/weapon/storage/belt/holster/security,
+		/obj/item/clothing/head/beret/centcom/bs_navy,
+		/obj/item/clothing/head/beret/centcom/bs_officer,
+		/obj/item/clothing/suit/armor/bs_coat,
+		/obj/item/clothing/suit/armor/bs_suit,
+		/obj/item/clothing/gloves/bs_combat,
+		/obj/item/weapon/storage/backpack/bs_mochila,
+		/obj/item/clothing/glasses/sunglasses/sechud,
+		/obj/item/clothing/glasses/hud/health/sun,
+		/obj/item/weapon/gun/energy/bs_secure)

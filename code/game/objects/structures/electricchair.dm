@@ -6,7 +6,7 @@
 	var/obj/item/assembly/shock_kit/part = null
 	var/last_time = 1.0
 	buckle_movable = FALSE
-	
+
 /obj/structure/bed/chair/e_chair/New()
 	..()
 	overlays += image('icons/obj/objects.dmi', src, "echair_over", MOB_LAYER + 1, dir)
@@ -74,3 +74,21 @@
 	A.power_light = light
 	A.update_icon()
 	return
+
+/////////
+// Double / Couch - BoH
+/////////
+
+/obj/structure/bed/double
+	name = "double bed"
+	icon_state = "doublebed"
+	base_icon = "doublebed"
+
+/obj/structure/bed/double/padded/New(var/newloc)
+	..(newloc, MATERIAL_WOOD, MATERIAL_CLOTH)
+
+/obj/structure/bed/double/post_buckle_mob(mob/living/M as mob)
+	if(M.buckled == src)
+		M.pixel_y = 13
+	else
+		M.pixel_y = 0

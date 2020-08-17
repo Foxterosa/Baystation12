@@ -39,6 +39,13 @@
 	item_state = "medhud_visor"
 	body_parts_covered = EYES
 
+/obj/item/clothing/glasses/hud/health/sun
+	name = "Gafas de sol medicas"
+	desc = "Un HUD medico integrado a unas gafas de sol comunes."
+	icon_state = "sunhudmed"
+	item_state = "sunhudmed"
+	flash_protection = FLASH_PROTECTION_MINOR
+
 /obj/item/clothing/glasses/hud/security
 	name = "security HUD"
 	desc = "A heads-up display that scans the humans in view and provides accurate data about their ID status and security records."

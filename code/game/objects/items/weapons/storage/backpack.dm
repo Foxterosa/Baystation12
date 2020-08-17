@@ -493,3 +493,11 @@
 	desc = "A tactical backpack worn over one shoulder. This is black and bottle green."
 	icon_state = "courierbagsec_exo"
 
+/obj/item/weapon/storage/backpack/bs_mochila
+	name = "mochila de blueshield"
+	desc = "Una mochila peteneciente a los blueshield."
+	icon_state = "blueshieldpack"
+	item_state_slots = list(
+		slot_l_hand_str = "securitypack",
+		slot_r_hand_str = "securitypack",
+		)

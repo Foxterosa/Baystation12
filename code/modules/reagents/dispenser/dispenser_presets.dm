@@ -147,3 +147,19 @@
 			/obj/item/weapon/reagent_containers/chem_disp_cartridge/syrup_vanilla,
 			/obj/item/weapon/reagent_containers/chem_disp_cartridge/syrup_pumpkin
 		)
+
+/obj/machinery/chemical_dispenser/tac_coffee
+	name = "old coffee maker"
+	desc = "Singlehandedly kicking ass for just as long as the ship. Probably older than you."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "coffee_dispenser2"
+	ui_title = "Coffee Dispenser"
+	accept_drinking = 1
+	core_skill = SKILL_COOKING
+	can_contaminate = FALSE //See above.
+
+/obj/machinery/chemical_dispenser/tac_coffee/full
+	spawn_cartridges = list(
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/coffee,
+			/obj/item/weapon/reagent_containers/chem_disp_cartridge/cream
+		)

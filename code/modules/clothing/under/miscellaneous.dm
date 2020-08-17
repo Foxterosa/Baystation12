@@ -760,3 +760,15 @@
 	icon_state = "kimono"
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+
+/obj/item/clothing/under/bs_uniform
+	name = "uniforme tactico Blueshield"
+	desc = "Un uniforme tactico perteneciente a un Blueshield."
+	icon_state = "ert_uniform"
+	item_state = "bl_suit"
+	worn_state = "ert_uniform"
+	armor = list(
+		melee = ARMOR_MELEE_SMALL
+		)
+	siemens_coefficient = 0.9
