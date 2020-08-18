@@ -198,3 +198,16 @@
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
+
+
+/obj/item/clothing/head/enfermera1
+	name = "gorro de enfermera"
+	desc = "Un gorro que te identifica como la enfermera del lugar."
+	icon_state = "nurse1_s"
+	item_state = "nurse1_s"
+
+/obj/item/clothing/head/enfermera2
+	name = "gorro de enfermera"
+	desc = "Un gorro que te identifica como la enfermera del lugar."
+	icon_state = "nurse_cmo_s"
+	item_state = "nurse_cmo_s"

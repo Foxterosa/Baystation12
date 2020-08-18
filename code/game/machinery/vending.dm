@@ -753,6 +753,28 @@
 					/obj/item/weapon/reagent_containers/food/drinks/cans/iced_tea = 1,/obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice = 1)
 	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
 
+obj/machinery/vending/cola/manaos
+	name = "Manaos"
+	desc = "Una maquina de bebidas unicamente de Manaos, marca \"Manaos\"."
+	icon_state = "Manaos_Machine"
+	icon_vend = "Manaos_Machine-vend"
+	icon_deny = "Manaos_Machine-deny"
+	vend_delay = 11
+	base_type = /obj/machinery/vending/cola
+	products = list(/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_cola = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_manzana = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limalimon = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_naranja = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_uva = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limon = 5)
+	prices = list(/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_cola = 2,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_manzana = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limalimon = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_naranja = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_uva = 4,
+					/obj/item/weapon/reagent_containers/food/drinks/cans/manaos_limon = 4)
+	idle_power_usage = 211
+
 /obj/machinery/vending/soda
 	name = "\improper Radical Renard"
 	desc = "A softdrink vendor promoted by Radical Renard."
@@ -996,6 +1018,47 @@
 		/obj/item/weapon/reagent_containers/food/snacks/donut/normal = 12,
 		/obj/item/weapon/storage/box/evidence = 6)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/weapon/storage/box/donut = 2)
+
+/obj/machinery/vending/security/accessory
+	name = "SecTech - Accessory"
+	desc = "A security accessory vendor."
+//	product_ads = "Crack capitalist skulls!;Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
+	icon_state = "sec"
+	icon_deny = "sec-deny"
+	icon_vend = "sec-vend"
+	vend_delay = 14
+	base_type = /obj/machinery/vending/security
+	req_access = list(access_security)
+	products = list(
+		/obj/item/clothing/accessory/armguards = 12,
+		/obj/item/clothing/accessory/armguards/navy = 8,
+		/obj/item/clothing/accessory/armguards/green = 8,
+		/obj/item/clothing/accessory/armguards/tan = 8,
+		/obj/item/clothing/accessory/armguards/blue = 8,
+		/obj/item/clothing/accessory/armguards/riot = 4,
+		/obj/item/clothing/accessory/armguards/ballistic = 2,
+		/obj/item/clothing/accessory/armguards/ablative = 2,
+		/obj/item/clothing/accessory/legguards = 12,
+		/obj/item/clothing/accessory/legguards/navy = 8,
+		/obj/item/clothing/accessory/legguards/green = 8,
+		/obj/item/clothing/accessory/legguards/tan = 8,
+		/obj/item/clothing/accessory/legguards/blue = 8,
+		/obj/item/clothing/accessory/legguards/riot = 4,
+		/obj/item/clothing/accessory/legguards/ballistic = 2,
+		/obj/item/clothing/accessory/legguards/ablative = 2,
+		/obj/item/clothing/accessory/storage/holster = 8,
+		/obj/item/clothing/accessory/storage/holster/armpit = 8,
+		/obj/item/clothing/accessory/storage/holster/hip = 8,
+		/obj/item/clothing/accessory/storage/holster/thigh = 8,
+		/obj/item/clothing/accessory/storage/holster/waist = 8,
+		/obj/item/clothing/accessory/storage/pouches = 12,
+		/obj/item/clothing/accessory/storage/pouches/large = 4,
+		/obj/item/clothing/accessory/ubac = 24,
+		/obj/item/clothing/accessory/armorplate = 8,
+		/obj/item/clothing/accessory/armorplate/medium = 6,
+		/obj/item/clothing/accessory/armorplate/tactical = 2,
+		/obj/item/clothing/accessory/armorplate/shock = 4)
+	contraband = list(/obj/item/clothing/accessory/storage/bandolier = 2,/obj/item/clothing/accessory/storage/drop_pouches/black = 2)
 
 /obj/machinery/vending/hydronutrients
 	name = "\improper NutriMax"

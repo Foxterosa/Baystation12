@@ -471,3 +471,6 @@
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_MINOR
 		)
+
+/obj/item/clothing/suit/armor/pcarrier/light/security
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/storage/pouches)

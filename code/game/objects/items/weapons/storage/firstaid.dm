@@ -165,6 +165,16 @@
 		/obj/item/stack/medical/advanced/bruise_pack,
 		)
 
+/obj/item/weapon/storage/firstaid/rad
+	name = "botiquin anti-radiacion"
+	desc = "Es un botiquin medico de emergencia para cuando las personas ignoran a la IA sobre la radiacion."
+	icon_state = "radaid"
+	item_state = "radaid"
+
+	startswith = list(
+		/obj/item/weapon/storage/med_pouch/radiation = 4
+		)
+
 /*
  * Pill Bottles
  */
