@@ -314,7 +314,7 @@
 /obj/structure/closet/secure_closet/psiadvisor
 	name = "psionic advisor's locker"
 	req_access = list(access_psiadvisor)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/command/bo
 
 /obj/structure/closet/secure_closet/psiadvisor/WillContain()
 	return list(

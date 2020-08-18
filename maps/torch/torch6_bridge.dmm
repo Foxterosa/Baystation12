@@ -4505,7 +4505,6 @@
 "hK" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1379;
 	id_tag = "bridge_eva_pump"
 	},
 /obj/effect/floor_decal/techfloor{
@@ -4766,7 +4765,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1379;
 	id_tag = "bridge_eva_pump"
 	},
 /obj/effect/floor_decal/techfloor{
@@ -4798,7 +4796,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1379;
 	id_tag = "bridge_eva_pump"
 	},
 /obj/effect/floor_decal/techfloor{
@@ -5125,7 +5122,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1379;
 	id_tag = "bridge_eva_pump"
 	},
 /obj/effect/floor_decal/techfloor{
@@ -6639,7 +6635,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1331;
 	id_tag = "aquila_shuttle_dock_pump"
 	},
 /obj/structure/cable/green{
@@ -10672,7 +10667,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
-	frequency = 1331
+	
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
@@ -11199,7 +11194,6 @@
 "xg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1379;
 	id_tag = "bridge_eva_pump"
 	},
 /obj/machinery/oxygen_pump{
@@ -13059,7 +13053,6 @@
 "Fc" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1331;
 	id_tag = "aquila_shuttle_pump_out_external"
 	},
 /obj/machinery/airlock_sensor{
@@ -13404,7 +13397,6 @@
 "Hg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1331;
 	id_tag = "aquila_shuttle_pump_out_internal"
 	},
 /obj/structure/cable{
@@ -14033,7 +14025,6 @@
 "Jg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1331;
 	id_tag = "aquila_shuttle_pump"
 	},
 /obj/machinery/oxygen_pump{
@@ -14471,7 +14462,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1331;
 	id_tag = "aquila_shuttle_pump"
 	},
 /obj/structure/handrai,
@@ -15069,7 +15059,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1379;
 	id_tag = "bridge_safe_pump"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -15912,7 +15901,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1379;
 	id_tag = "solar_bridge_pump"
 	},
 /obj/machinery/light/small,
@@ -16557,7 +16545,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1379;
 	id_tag = "bridge_safe_pump_out_internal"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,

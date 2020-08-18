@@ -1470,11 +1470,4 @@
 	/obj/item/clothing/accessory/medal/iron/nanotrasen = 2,
 	/obj/item/clothing/accessory/medal/silver/marooned_medal = 2,
 	/obj/item/clothing/accessory/medal/silver/nanotrasen = 2,
-	/obj/item/clothing/accessory/medal/solgov/bronze/heart = 2,
-	/obj/item/clothing/accessory/medal/solgov/bronze/sol = 2,
-	/obj/item/clothing/accessory/medal/solgov/gold/crest = 2,
-	/obj/item/clothing/accessory/medal/solgov/gold/sol = 2,
-	/obj/item/clothing/accessory/medal/solgov/gold/star = 2,
-	/obj/item/clothing/accessory/medal/solgov/gold/sun = 2,
-	/obj/item/clothing/accessory/medal/solgov/iron/star = 2
 	)
