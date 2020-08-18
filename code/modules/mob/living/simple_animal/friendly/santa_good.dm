@@ -1,4 +1,4 @@
-/mob/living/simple_animal/friendly/santa_good
+/mob/living/simple_animal/santa_good
 	name = "Canta Claus"
 	desc = "¡Santa! ¡sabia que eras real!"
 	icon_state = "santa"
