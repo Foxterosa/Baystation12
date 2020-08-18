@@ -258,7 +258,6 @@
 /obj/structure/closet/secure_closet/magistrado
 	name = "armario del Magistrado"
 	req_access = list(access_magistrado)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
 
 /obj/structure/closet/secure_closet/magistrado/WillContain()
 	return list(
@@ -285,7 +284,6 @@
 /obj/structure/closet/secure_closet/bs
 	name = "armario del Blueshield"
 	req_access = list(access_bs)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/command/bo
 
 /obj/structure/closet/secure_closet/bs/WillContain()
 	return list(
@@ -314,7 +312,6 @@
 /obj/structure/closet/secure_closet/psiadvisor
 	name = "psionic advisor's locker"
 	req_access = list(access_psiadvisor)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/command/bo
 
 /obj/structure/closet/secure_closet/psiadvisor/WillContain()
 	return list(

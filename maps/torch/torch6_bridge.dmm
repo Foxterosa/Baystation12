@@ -825,7 +825,6 @@
 /area/crew_quarters/heads/office/magistrado)
 "bA" = (
 /obj/random/drinkbottle,
-/obj/structure/closet/secure_closet/magistrado,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/magistrado)
 "bB" = (
@@ -11046,7 +11045,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
 "wJ" = (
-/obj/structure/closet/secure_closet/psiadvisor,
 /obj/item/weapon/storage/briefcase/foundation,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
@@ -15286,10 +15284,6 @@
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
 /area/aquila/passenger)
-"QJ" = (
-/obj/structure/closet/secure_closet/bs,
-/turf/simulated/floor/carpet/blue2,
-/area/crew_quarters_boh/cabin_main/officerbunk)
 "QK" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/hatch/maintenance,
@@ -25119,7 +25113,7 @@ af
 Nu
 Oo
 mt
-QJ
+DW
 Nu
 cE
 nS
