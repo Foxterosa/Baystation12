@@ -48,7 +48,7 @@
 	cost = 50
 	containertype = /obj/structure/largecrate/animal/corgi
 	containername = "corgi crate"
-	
+
 /decl/hierarchy/supply_pack/livecargo/cat
 	name = "Live - Cat"
 	contains = list()
@@ -83,4 +83,18 @@
 	cost = 70
 	containertype = /obj/structure/largecrate/animal/chick
 	containername = "chicken crate"
+	access = access_hydroponics
+
+/decl/hierarchy/supply_pack/livecargo/pug
+	name = "Vivo - Pug"
+	cost = 50
+	containertype = /mob/living/simple_animal/corgi/pug
+	containername = "caja con pug"
+	access = access_hydroponics
+
+/decl/hierarchy/supply_pack/livecargo/kanguro
+	name = "Vivo - Kanguro"
+	cost = 100
+	containertype = /mob/living/simple_animal/hostile/retaliate/Kanguro
+	containername = "caja con kanguro"
 	access = access_hydroponics
