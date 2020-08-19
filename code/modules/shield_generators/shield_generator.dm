@@ -518,3 +518,52 @@
 			turfs.Add(T)
 
 	return turfs
+
+
+
+
+/obj/machinery/power/shield_generator/new_icon/
+	icon = 'icons/obj/machines/shielding.dmi'
+	icon_state = "shield_gen"
+	var/width = 2
+
+
+/obj/machinery/power/shield_generator/new_icon/Initialize()
+	. = ..()
+	SetBounds()
+
+/obj/machinery/power/shield_generator/new_icon/on_update_icon()
+	overlays.Cut()
+
+	overlays += overlay_image('icons/obj/machines/shielding.dmi', "console_state")
+
+
+	if(!overloaded)
+		if(running == SHIELD_DISCHARGING)
+			overlays += overlay_image('icons/obj/machines/shielding.dmi', "shield_discharging", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+		if(running == SHIELD_RUNNING)
+			overlays += overlay_image('icons/obj/machines/shielding.dmi', "shield_running", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+		if(running == SHIELD_SPINNING_UP)
+			overlays += overlay_image('icons/obj/machines/shielding.dmi', "shield_spinning_up", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
+	if(overloaded)
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "shield_overloaded", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
+	if(current_energy >= max_energy)
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "power_overlay_100", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+	if(current_energy >= (max_energy * 0.75))
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "power_overlay_75", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+	if(current_energy >= (max_energy * 0.50))
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "power_overlay_50", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+	if(current_energy <= (max_energy * 0.25))
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "power_overlay_25", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
+	if(powernet && (!input_cut && running > SHIELD_OFF))
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "shield-charging", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
+	if(running > SHIELD_OFF)
+		overlays += overlay_image('icons/obj/machines/shielding.dmi', "shield_active", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
+/obj/machinery/power/shield_generator/new_icon/proc/SetBounds()
+	bound_width = width * world.icon_size
+	bound_height = world.icon_size
