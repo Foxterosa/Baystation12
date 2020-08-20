@@ -2941,3 +2941,12 @@
 	result = /datum/reagent/drink/eggnog
 	required_reagents = list(/datum/reagent/nutriment/protein/egg = 1, /datum/reagent/drink/milk/ = 1, /datum/reagent/sugar = 1)
 	result_amount = 3
+
+
+//Mate
+/datum/chemical_reaction/mate
+	name = "Mate"
+	hidden_from_codex = FALSE
+	result = /datum/reagent/drink/mate
+	required_reagents = list(/datum/reagent/nutriment/yerba = 2, /datum/reagent/water = 1)
+	result_amount = 3

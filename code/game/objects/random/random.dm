@@ -1081,6 +1081,37 @@ obj/random/hostile/spawn_choices()
 				/mob/living/simple_animal/hostile/retaliate/Kanguro,
 				/mob/living/simple_animal/hostile/vagrant/swarm)
 
+/obj/random/hostile/maint
+	name = "Random Hostile Maint Mob"
+	desc = "This is a random hostile mob suitable to be found in maintenance."
+	icon = 'icons/mob/amorph.dmi'
+	icon_state = "standing"
+	spawn_nothing_percentage = 0
+
+/obj/random/hostile/maint/spawn_choices()
+	return list(
+		/mob/living/simple_animal/hostile/retaliate/goat = 1,
+		/mob/living/simple_animal/hostile/retaliate/goose = 1,
+		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
+		/mob/living/simple_animal/hostile/retaliate/Kanguro = 1,
+		/mob/living/simple_animal/hostile/rogue_drone = 8,
+		/mob/living/simple_animal/hostile/scarybat = 4,
+	)
+
+/obj/random/hostile/maint_severe
+	name = "Random Deadly Maint Mob"
+	desc = "This is a random DEADLY hostile mob suitable to be found in maintenance."
+	icon = 'icons/mob/amorph.dmi'
+	icon_state = "standing"
+	spawn_nothing_percentage = 0
+
+/obj/random/hostile/maint_severe/spawn_choices()
+	return list(
+		/mob/living/simple_animal/hostile/voxslug = 6,
+		/mob/living/simple_animal/hostile/leech = 3,
+		/mob/living/simple_animal/hostile/viscerator = 1
+	)
+
 /*
 	Selects one spawn point out of a group of points with the same ID and asks it to generate its items
 */

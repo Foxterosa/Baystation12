@@ -61,7 +61,7 @@
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		H.custom_pain(SPAN_WARNING("You feel a tiny prick!"), 1, TRUE, H.get_organ(user.zone_sel.selecting))
-		
+
 	playsound(src, 'sound/effects/hypospray.ogg',25)
 	user.visible_message("<span class='warning'>[user] injects [M] with [src].</span>")
 
@@ -186,27 +186,58 @@
 	starts_with = list(/datum/reagent/dylovene = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain
-	name = "autoinjector (painkiller)"
+	name = "autoinyector (Tramadol)"
 	band_color = COLOR_PURPLE
 	starts_with = list(/datum/reagent/tramadol = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain
-	name = "autoinjector (oxycodone)"
-	band_color = COLOR_DARK_GRAY
+	name = "autoinyector (Oxycodone)"
+	band_color = COLOR_PURPLE
 	starts_with = list(/datum/reagent/tramadol/oxycodone = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad
-	name = "autoinjector (anti-rad)"
+	name = "autoinyector (Hyronalin)"
 	band_color = COLOR_AMBER
 	starts_with = list(/datum/reagent/hyronalin = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/mindbreaker
-	name = "autoinjector"
+	name = "autoinyector"
 	band_color = COLOR_DARK_GRAY
 	starts_with = list(/datum/reagent/mindbreaker = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/empty
-	name = "autoinjector"
+	name = "autoinyector"
 	band_color = COLOR_WHITE
 	starts_with = list()
 	matter = list(MATERIAL_PLASTIC = 150, MATERIAL_GLASS = 50)
+
+//boh
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
+	name = "autoinyector (Estimulante)"
+	band_color = COLOR_DARK_GRAY
+	starts_with = list(/datum/reagent/tramadol/oxycodone = 10, /datum/reagent/inaprovaline = 5)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
+	name = "autoinyector (Zerk)"
+	band_color = COLOR_RED
+	starts_with = list(/datum/reagent/synaptizine = 3, /datum/reagent/hyperzine = 12)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross
+	name = "autoinyector (Hypeross)"
+	band_color = COLOR_WHITE
+	starts_with = list(/datum/reagent/hypeross = 3)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
+	name = "autoinyector (Peridaxon)"
+	band_color = COLOR_PINK
+	starts_with = list(/datum/reagent/peridaxon = 10)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
+	name = "autoinyector (Kompoton)"
+	band_color = COLOR_RED_LIGHT
+	starts_with = list(/datum/reagent/kompoton = 10)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
+	name = "autoinyector (Alkysine)"
+	band_color = COLOR_YELLOW
+	starts_with = list(/datum/reagent/alkysine = 5)

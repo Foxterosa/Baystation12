@@ -3371,3 +3371,33 @@
 	glass_special = list(DRINK_FIZZ)
 
 
+//Mate
+/datum/reagent/nutriment/yerba
+	name = "Yerba mate"
+	description = "Extrano... no crees que sea buena idea comer esto."
+	taste_description = "algo amargo"
+	reagent_state = SOLID
+	color = "#597A31"
+
+/datum/reagent/nutriment/yerba/touch_turf(var/turf/simulated/T)
+	if(!istype(T, /turf/space))
+		new /obj/effect/decal/cleanable/yerba(T)
+		if(T.wet > 1)
+			T.wet = min(T.wet, 1)
+		else
+			T.wet = 0
+
+/datum/reagent/drink/mate
+	name = "Mate"
+	description = "Una infusion hecha con hojas de yerba mate, bastante popular en ciertos lugares, por alguna razon."
+	taste_description = "algo amargo"
+	taste_mult = 1.3
+	color = "#789C94"
+	adj_dizzy = -5
+	adj_drowsy = -3
+	adj_temp = 25
+
+	glass_name = "mate"
+	glass_desc = "No lo sueltes o vas a desparramar por todos lados."
+
+

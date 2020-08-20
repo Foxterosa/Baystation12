@@ -128,3 +128,13 @@
 	random_icon_states = list("mfloor1", "mfloor2", "mfloor3", "mfloor4", "mfloor5", "mfloor6", "mfloor7")
 	persistent = TRUE
 	generic_filth = TRUE
+
+
+//Mate
+/obj/effect/decal/cleanable/yerba
+	name = "Yerba mate"
+	desc = "No se ve mal. Regla de los 5 segundos!"
+	gender = PLURAL
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "yerba"
+	persistent = TRUE

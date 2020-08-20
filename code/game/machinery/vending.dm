@@ -638,7 +638,9 @@
 					/obj/item/weapon/reagent_containers/food/condiment/mint = 2,
 					/obj/item/weapon/reagent_containers/food/drinks/ice = 10,
 					/obj/item/weapon/glass_extra/stick = 15,
-					/obj/item/weapon/glass_extra/straw = 15)
+					/obj/item/weapon/glass_extra/straw = 15,
+					/obj/item/weapon/reagent_containers/food/condiment/yerba = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/mate = 5)
 	contraband = list(/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumwine = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/premiumvodka = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/patron = 5,
@@ -929,8 +931,38 @@ obj/machinery/vending/cola/manaos
 
 
 /obj/machinery/vending/medical
-	name = "\improper NanoMed Plus"
+	name = "NanoMed Plus"
 	desc = "Medical drug dispenser."
+	icon_state = "med"
+	icon_deny = "med-deny"
+	icon_vend = "med-vend"
+	vend_delay = 18
+	base_type = /obj/machinery/vending/medical
+	req_access = list(list(access_medical,access_chemistry))
+	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
+	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 3,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 2,
+					/obj/item/weapon/reagent_containers/syringe/antiviral = 5,
+					/obj/item/stack/medical/advanced/bruise_pack = 5,
+					/obj/item/stack/medical/advanced/ointment = 5,
+					/obj/item/stack/medical/splint = 5,
+					/obj/item/device/scanner/health = 5)
+	contraband = list(/obj/item/weapon/reagent_containers/pill/stox = 5,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton = 1)
+	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
+
+/obj/machinery/vending/medical/abandonado
+	name = "NanoMed Plus abandonado"
+	desc = "Un dispensador de medicinas abandonado. Te preguntas si aun tendra algo."
 	icon_state = "med"
 	icon_deny = "med-deny"
 	icon_vend = "med-vend"
@@ -938,17 +970,20 @@ obj/machinery/vending/cola/manaos
 	base_type = /obj/machinery/vending/medical
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
 	req_access = list(access_medical_equip)
-	products = list(/obj/item/weapon/reagent_containers/glass/bottle/antitoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline = 4,
-					/obj/item/weapon/reagent_containers/glass/bottle/stoxin = 4,/obj/item/weapon/reagent_containers/glass/bottle/toxin = 4,
-					/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/syringe = 12,
-					/obj/item/device/scanner/health = 5,/obj/item/weapon/reagent_containers/glass/beaker = 4, /obj/item/weapon/reagent_containers/dropper = 2,
-					/obj/item/stack/medical/advanced/bruise_pack = 3, /obj/item/stack/medical/advanced/ointment = 3, /obj/item/stack/medical/splint = 2,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 4)
-	contraband = list(/obj/item/clothing/mask/chewable/candy/lolli/meds = 8,
-					/obj/item/weapon/reagent_containers/pill/tox = 3,/obj/item/weapon/reagent_containers/pill/stox = 4,/obj/item/weapon/reagent_containers/pill/antitox = 6,
-					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 2)
-	idle_power_usage = 211 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
-
+	products = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad = 2,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine = 1,
+					/obj/item/weapon/reagent_containers/syringe/antiviral = 2,
+					/obj/item/stack/medical/advanced/bruise_pack = 3,
+					/obj/item/stack/medical/advanced/ointment = 2,
+					/obj/item/stack/medical/splint = 2,
+					/obj/item/device/scanner/health = 1)
+	idle_power_usage = 211
 
 //This one's from bay12
 /obj/machinery/vending/phoronresearch
@@ -969,15 +1004,11 @@ obj/machinery/vending/cola/manaos
 	base_type = /obj/machinery/vending/wallmed1
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
-		/obj/item/stack/medical/bruise_pack = 3,
-		/obj/item/stack/medical/ointment = 3,
-		/obj/item/weapon/reagent_containers/pill/paracetamol = 4,
-		/obj/item/weapon/storage/med_pouch/trauma,
-		/obj/item/weapon/storage/med_pouch/burn,
-		/obj/item/weapon/storage/med_pouch/oxyloss,
-		/obj/item/weapon/storage/med_pouch/toxin
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
 		)
-	contraband = list(/obj/item/weapon/reagent_containers/syringe/antitoxin = 4,/obj/item/weapon/reagent_containers/syringe/antiviral = 4,/obj/item/weapon/reagent_containers/pill/tox = 1)
 
 /obj/machinery/vending/wallmed2
 	name = "\improper NanoMed Mini"
@@ -989,16 +1020,11 @@ obj/machinery/vending/cola/manaos
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	base_type = /obj/machinery/vending/wallmed2
 	products = list(
-		/obj/item/weapon/reagent_containers/hypospray/autoinjector = 5,
-		/obj/item/stack/medical/bruise_pack = 4,
-		/obj/item/stack/medical/ointment = 4,
-		/obj/item/weapon/storage/med_pouch/trauma,
-		/obj/item/weapon/storage/med_pouch/burn,
-		/obj/item/weapon/storage/med_pouch/oxyloss,
-		/obj/item/weapon/storage/med_pouch/toxin,
-		/obj/item/weapon/storage/med_pouch/radiation
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
 		)
-	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 3, /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain = 2)
 
 /obj/machinery/vending/security
 	name = "\improper SecTech"
