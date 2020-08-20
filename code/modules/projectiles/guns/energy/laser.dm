@@ -185,3 +185,12 @@ obj/item/weapon/gun/energy/retro
 	item_state = "redtag"
 	projectile_type = /obj/item/projectile/beam/lastertag/red
 	required_vest = /obj/item/clothing/suit/redtag
+
+/////////
+// 'Broken' Carbine
+/////////
+/obj/item/weapon/gun/energy/laser/broken
+	name = "broken laser carbine"
+	desc = "An HI G40E, though this one appears to have a cracked projection lens."
+	icon_state = "lasersec"
+	projectile_type = /obj/item/projectile/beam/incendiary_laser
