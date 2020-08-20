@@ -762,6 +762,10 @@
 	name = "\improper Bar escondido"
 	icon_state = "bar"
 
+/area/vacant/empty
+	name = "\improper Area vacante vacia"
+	icon_state = "construction"
+
 // Storage
 /area/storage/auxillary
 	req_access = list(access_cargo)
@@ -1792,7 +1796,10 @@
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
 
-
+//Sala de juegos
+/area/crew_quarters/playroom
+	name = "\improper Cubierta 3 - Sala de juegos"
+	icon_state = "construction"
 
 
 

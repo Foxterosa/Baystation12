@@ -334,3 +334,19 @@
 	icon_state = "bandskull"
 	item_state = "bandskull"
 
+
+/obj/item/clothing/mask/kasumimask
+	name = "mascara de kasumi"
+	desc = "They'll never see you coming pero mujer."
+	icon_state = "kasumi_mask"
+	item_state = "kasumi_mask"
+	flags_inv = HIDEFACE
+	body_parts_covered = 0
+
+/obj/item/clothing/mask/jokermask
+	name = "mascara de Joker"
+	desc = "They'll never see you coming."
+	icon_state = "joker_mask"
+	item_state = "joker_mask"
+	flags_inv = HIDEFACE
+	body_parts_covered = 0
