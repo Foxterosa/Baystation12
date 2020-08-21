@@ -376,6 +376,26 @@
 	desc = "Command"
 	region = ACCESS_REGION_COMMAND
 
+/var/const/access_magistrado = "ACCESS_ADJUDICATOR" //68
+/datum/access/magistrado
+	id = access_magistrado
+	desc = "Magistrado"
+	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
+
+/var/const/access_bs = "ACCESS_BS" //69
+/datum/access/blueshield
+	id = access_bs
+	desc = "Blueshield"
+	region = ACCESS_REGION_COMMAND
+
+/var/const/access_psiadvisor = "ACCESS_PSIADVISOR" //70
+/datum/access/psiadvisor
+	id = access_psiadvisor
+	desc = "Psionic Advisor"
+	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE
+
 /******************
 * Central Command *
 ******************/

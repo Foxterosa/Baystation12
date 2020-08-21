@@ -370,3 +370,17 @@
 	icon_state = "oliveoilsmall"
 	center_of_mass = "x=16;y=8"
 	starting_reagents = list(/datum/reagent/oliveoil = 20)
+
+
+//Mate
+/obj/item/weapon/reagent_containers/food/condiment/yerba
+	name = "yerba mate"
+	desc = "Un paquete de yerba mate, extrana marca"
+	icon = 'icons/obj/food.dmi'
+	icon_state = "yerba"
+	item_state = "yerba"
+	randpixel = 10
+	starting_reagents = list(/datum/reagent/nutriment/yerba = 50)
+
+/obj/item/weapon/reagent_containers/food/condiment/yerba/on_reagent_change()
+	return

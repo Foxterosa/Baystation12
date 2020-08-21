@@ -237,3 +237,27 @@
 	armor = list(
 		bio = ARMOR_BIO_MINOR
 		)
+
+/obj/item/clothing/under/rank/enfermera1
+	desc = "Un comodo vestido para trabajar en la enfermeria. Esperemos que no te toque asistir una operacion."
+	name = "vestido de enfermera"
+	icon_state = "nurse1_s"
+	item_state = "nurse1_s"
+	worn_state = "nurse1_s"
+	permeability_coefficient = 0.50
+	armor = list(
+		bio = ARMOR_BIO_MINOR
+		)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+
+/obj/item/clothing/under/rank/enfermera2
+	desc = "Un comodo vestido para trabajar en la enfermeria. Esperemos que no te toque asistir una operacion."
+	name = "vestido de enfermera"
+	icon_state = "nurse_cmo_s"
+	item_state = "nurse_cmo_s"
+	worn_state = "nurse_cmo_s"
+	permeability_coefficient = 0.50
+	armor = list(
+		bio = ARMOR_BIO_MINOR
+		)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO

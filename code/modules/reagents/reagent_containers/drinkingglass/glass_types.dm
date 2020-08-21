@@ -327,3 +327,17 @@
 	desc = "An unreasonably tall coffee cup, for when you really need to wake up in the morning. This one is rainbow colored."
 	icon_state = "coffeecup_tall_rainbow"
 	base_name = "tall rainbow cup"
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbay
+	name = "\improper Tasa de Medbay"
+	desc = "Una tasa de cafe blanca con el logo de Medbay en ella."
+	icon_state = "coffeecup_med"
+	item_state = "coffee_med"
+	base_name = "\improper Med cup"
+
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/medbayheart
+	name = "\improper Tasa con corazon"
+	desc = "Una tasa de cafe blanca perteneciente a Medbay. Tiene un corazon en ella, ow..."
+	icon_state = "coffeecup_medheart"
+	item_state = "coffee_med"
+	base_name = "\improper Med cup heart"

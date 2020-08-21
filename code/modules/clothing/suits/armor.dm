@@ -443,3 +443,34 @@
 	desc = "Pukish armor."
 	icon_state = "tdgreen"
 	siemens_coefficient = 1
+
+/obj/item/clothing/suit/armor/bs_suit
+	name = "chaleco anti-balas"
+	desc = "Un chaleco anti-balas perteneciente a un blueshield."
+	icon_state = "blueshield"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+		)
+
+/obj/item/clothing/suit/armor/bs_coat
+	name = "Saco anti-balas"
+	desc = "Un saco anti-balas perteneciente a un blueshield."
+	icon_state = "blueshieldcoat"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+		)
+
+/obj/item/clothing/suit/armor/pcarrier/light/security
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/storage/pouches)

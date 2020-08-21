@@ -328,3 +328,30 @@
 /obj/item/weapon/reagent_containers/food/drinks/tea/chai/Initialize()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/drink/tea/chai, 30)
+
+
+
+/obj/item/weapon/reagent_containers/food/drinks/mate
+	name = "porongo"
+	desc = "Un recipiente unicamente para tomar mate. Una bombilla sale de esta."
+	icon = 'icons/obj/drink_glasses/coffecup.dmi'
+	icon_state = "mate"
+	item_state = "mate"
+	possible_transfer_amounts = null
+	volume = 15
+	center_of_mass = "x=16;y=12"
+/obj/item/weapon/reagent_containers/food/drinks/mate/feed_sound(var/mob/user)
+	playsound(user.loc, 'sound/items/mate.ogg', rand(10, 50), 1)
+
+
+/obj/item/weapon/reagent_containers/food/drinks/mate_med
+	name = "porongo"
+	desc = "Un recipiente con una bombilla unicamente para tomar mate. Esta tiene el logo de Medbay en ella."
+	icon = 'icons/obj/drink_glasses/coffecup.dmi'
+	icon_state = "mate_med"
+	item_state = "mate_med"
+	possible_transfer_amounts = null
+	volume = 15
+	center_of_mass = "x=16;y=12"
+/obj/item/weapon/reagent_containers/food/drinks/mate_med/feed_sound(var/mob/user)
+	playsound(user.loc, 'sound/items/mate.ogg', rand(10, 50), 1)

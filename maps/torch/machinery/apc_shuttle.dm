@@ -18,3 +18,10 @@
 
 /obj/machinery/power/apc/hyper/shuttle/aquila
 	req_access = list(list(access_engine_equip, access_aquila_helm))
+
+/////////
+// toc apc
+/////////
+/obj/machinery/power/apc/hyper/toc
+	req_access = list(list(access_engine_equip, access_bridge))
+	emp_hardened = 1
