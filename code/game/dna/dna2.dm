@@ -34,6 +34,25 @@
 #define DNA_UI_BEARD_STYLE 15
 #define DNA_UI_HAIR_STYLE  16
 #define DNA_UI_LENGTH      16 // Update this when you add something, or you WILL break shit.
+#define DNA_UI_EAR_STYLE   17 // snippet for custom species stuff
+#define DNA_UI_TAIL_STYLE  18
+#define DNA_UI_PLAYERSCALE 19
+#define DNA_UI_TAIL_R      20
+#define DNA_UI_TAIL_G      21
+#define DNA_UI_TAIL_B      22
+#define DNA_UI_TAIL2_R     23
+#define DNA_UI_TAIL2_G     24
+#define DNA_UI_TAIL2_B     25
+#define DNA_UI_EARS_R      26
+#define DNA_UI_EARS_G      27
+#define DNA_UI_EARS_B      28
+#define DNA_UI_EARS2_R     29
+#define DNA_UI_EARS2_G     30
+#define DNA_UI_EARS2_B     31
+#define DNA_UI_WING_STYLE  32
+#define DNA_UI_WING_R      33
+#define DNA_UI_WING_G      34
+#define DNA_UI_WING_B 		35 // end snippet
 
 #define DNA_SE_LENGTH 27
 // For later:
@@ -78,6 +97,13 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	var/b_type = "A+"  // Should probably change to an integer => string map but I'm lazy.
 	var/real_name          // Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
 
+	// BastionStation CUSTOM SPECIES
+	var/custom_species
+	var/base_species = "Custom Human"
+	var/list/species_traits = list()
+	var/blood_color = "#f5e400"
+	// BastionStation CUSTOM SPECIES END
+
 	// New stuff
 	var/species = SPECIES_HUMAN
 	var/s_base = ""
@@ -93,6 +119,9 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	new_dna.species=species
 	new_dna.body_markings=body_markings.Copy()
 	new_dna.s_base=s_base
+	new_dna.base_species=base_species //BastionStation Edit
+	new_dna.species_traits=species_traits.Copy() //BastionStation Edit
+	new_dna.blood_color=blood_color //BastionStation Edit
 	for(var/b=1;b<=DNA_SE_LENGTH;b++)
 		new_dna.SE[b]=SE[b]
 		if(b<=DNA_UI_LENGTH)
@@ -128,6 +157,90 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	if(!character.f_style)
 		character.f_style = "Shaved"
 	var/beard	= GLOB.facial_hair_styles_list.Find(character.f_style)
+
+	SetUIValueRange(DNA_UI_HAIR_R,    character.r_hair,    255,    1)
+	SetUIValueRange(DNA_UI_HAIR_G,    character.g_hair,    255,    1)
+	SetUIValueRange(DNA_UI_HAIR_B,    character.b_hair,    255,    1)
+
+	SetUIValueRange(DNA_UI_BEARD_R,   character.r_facial,  255,    1)
+	SetUIValueRange(DNA_UI_BEARD_G,   character.g_facial,  255,    1)
+	SetUIValueRange(DNA_UI_BEARD_B,   character.b_facial,  255,    1)
+
+	SetUIValueRange(DNA_UI_EYES_R,    character.r_eyes,    255,    1)
+	SetUIValueRange(DNA_UI_EYES_G,    character.g_eyes,    255,    1)
+	SetUIValueRange(DNA_UI_EYES_B,    character.b_eyes,    255,    1)
+
+	SetUIValueRange(DNA_UI_SKIN_R,    character.r_skin,    255,    1)
+	SetUIValueRange(DNA_UI_SKIN_G,    character.g_skin,    255,    1)
+	SetUIValueRange(DNA_UI_SKIN_B,    character.b_skin,    255,    1)
+
+	SetUIValueRange(DNA_UI_SKIN_TONE, 35-character.s_tone, 220,    1) // Value can be negative.
+
+	SetUIState(DNA_UI_GENDER,         character.gender!=MALE,        1)
+
+	SetUIValueRange(DNA_UI_HAIR_STYLE,  hair,  GLOB.hair_styles_list.len,       1)
+	SetUIValueRange(DNA_UI_BEARD_STYLE, beard, GLOB.facial_hair_styles_list.len,1)
+
+	body_markings.Cut()
+	s_base = character.s_base
+	for(var/obj/item/organ/external/E in character.organs)
+		E.s_base = s_base
+		if(E.markings.len)
+			body_markings[E.organ_tag] = E.markings.Copy()
+
+	UpdateUI()
+
+// BastionStation Edit Start
+
+	// Demi Ears
+	var/ear_style = 0
+	if(character.ear_style)
+		ear_style = ear_styles_list.Find(character.ear_style.type)
+
+	// Demi Tails
+	var/tail_style = 0
+	if(character.tail_style)
+		tail_style = tail_styles_list.Find(character.tail_style.type)
+
+	// Demi Wings
+	var/wing_style = 0
+	if(character.wing_style)
+		wing_style = wing_styles_list.Find(character.wing_style.type)
+
+	// Technically custom_species is not part of the UI, but this place avoids merge problems.
+	src.custom_species = character.custom_species
+	if(istype(character.species,/datum/species/custom))
+		var/datum/species/custom/CS = character.species
+		src.species_traits = CS.traits.Copy()
+		src.base_species = CS.base_species
+		src.blood_color = CS.blood_color
+
+	// +1 to account for the none-of-the-above possibility
+	SetUIValueRange(DNA_UI_EAR_STYLE,	ear_style + 1,     ear_styles_list.len  + 1,  1)
+	SetUIValueRange(DNA_UI_TAIL_STYLE,	tail_style + 1,    tail_styles_list.len + 1,  1)
+	SetUIValueRange(DNA_UI_WING_STYLE,	wing_style + 1,    wing_styles_list.len + 1,  1)
+
+	SetUIValueRange(DNA_UI_TAIL_R,    character.r_tail,    255,    1)
+	SetUIValueRange(DNA_UI_TAIL_G,    character.g_tail,    255,    1)
+	SetUIValueRange(DNA_UI_TAIL_B,    character.b_tail,    255,    1)
+
+	SetUIValueRange(DNA_UI_TAIL2_R,   character.r_tail2,   255,    1)
+	SetUIValueRange(DNA_UI_TAIL2_G,   character.g_tail2,   255,    1)
+	SetUIValueRange(DNA_UI_TAIL2_B,   character.b_tail2,   255,    1)
+
+	SetUIValueRange(DNA_UI_WING_R,    character.r_wing,    255,    1)
+	SetUIValueRange(DNA_UI_WING_G,    character.g_wing,    255,    1)
+	SetUIValueRange(DNA_UI_WING_B,    character.b_wing,    255,    1)
+
+	SetUIValueRange(DNA_UI_EARS_R,    character.r_ears,    255,    1)
+	SetUIValueRange(DNA_UI_EARS_G,    character.g_ears,    255,    1)
+	SetUIValueRange(DNA_UI_EARS_B,    character.b_ears,    255,    1)
+
+	SetUIValueRange(DNA_UI_EARS2_R,   character.r_ears2,   255,    1)
+	SetUIValueRange(DNA_UI_EARS2_G,   character.g_ears2,   255,    1)
+	SetUIValueRange(DNA_UI_EARS2_B,   character.b_ears2,   255,    1)
+
+// BastionStation Edit End
 
 	SetUIValueRange(DNA_UI_HAIR_R,    character.r_hair,    255,    1)
 	SetUIValueRange(DNA_UI_HAIR_G,    character.g_hair,    255,    1)

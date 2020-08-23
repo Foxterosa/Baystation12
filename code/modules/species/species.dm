@@ -227,7 +227,8 @@
 	var/list/base_auras
 
 	var/sexybits_location	//organ tag where they are located if they can be kicked for increased pain
-	
+
+	var/list/prone_overlay_offset = list(0, 0) // amount to shift overlays when lying
 	var/job_skill_buffs = list()				// A list containing jobs (/datum/job), with values the extra points that job receives.
 
 	var/list/descriptors = list(
@@ -256,7 +257,7 @@
 		list(/decl/emote/audible/grunt, /decl/emote/audible/groan) = 10,
 	)
 
-	
+
 	var/exertion_effect_chance = 0
 	var/exertion_hydration_scale = 0
 	var/exertion_nutrition_scale = 0

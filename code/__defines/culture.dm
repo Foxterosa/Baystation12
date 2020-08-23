@@ -88,6 +88,7 @@
 #define RELIGION_SPIRITUALISM  "Spiritualism"
 #define RELIGION_SHINTO        "Shinto"
 #define RELIGION_TAOISM        "Taoism"
+#define CULTURE_SYMBIOTIC      "Symbiote Host"
 
 // Skrellian cultures.
 #define CULTURE_SKRELL_QERR     "Qerr-Katish"
@@ -160,12 +161,13 @@
 #define CULTURE_UNATHI_SALT_SWAMP     "Salt Swamp Clans"
 #define CULTURE_UNATHI_SPACE          "Space-Faring Clans"
 #define CULTURE_UNATHI_TERSTEN        "Tersten Clans"
- 
+
+
 #define HOME_SYSTEM_MOGHES          "Moghes"
 #define HOME_SYSTEM_OUERE           "Ouere"
 #define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
 #define HOME_SYSTEM_OFFWORLD        "Off-world"
- 
+
 #define FACTION_UNATHI_HEGEMONY          "Moghes Hegemony"
 #define FACTION_UNATHI_TERSTEN_HEGEMONY  "Tersten Hegemony"
 #define FACTION_UNATHI_SSEN_UUMA         "Ssen-Uuma Convent"
@@ -173,7 +175,7 @@
 #define FACTION_UNATHI_BAASK             "Ba'ask Krukzuz"
 #define FACTION_UNATHI_GRESIS            "Gresis Krukzuz"
 #define FACTION_UNATHI_RAH_ZAKEH         "Rah'Zakeh League"
- 
+
 #define RELIGION_UNATHI_STRATAGEM    "Grand Stratagem"
 #define RELIGION_UNATHI_PRECURSOR    "Precursor"
 #define RELIGION_UNATHI_VINE         "Hand of the Vine"
@@ -181,6 +183,16 @@
 #define RELIGION_UNATHI_MARKESHELI   "Cult of Markesh"
 #define RELIGION_UNATHI_ANCESTOR     "Ancestor Worship"
 #define RELIGION_UNATHI_AGA_EAKHE    "Aga-Eakhe"
+
+#define CULTURE_UNATHI              "Moghes Hegemony"
+
+#define FACTION_UNATHI_POLAR        "Polar Clans"
+#define FACTION_UNATHI_DESERT       "Desert Clans"
+#define FACTION_UNATHI_SAVANNAH     "Savannah Clans"
+#define FACTION_UNATHI_DIAMOND_PEAK "Diamond Peak Clans"
+#define FACTION_UNATHI_SALT_SWAMP   "Salt Swamp Clans"
+#define FACTION_UNATHI_YEOSA		"Yeosa Clans"
+
 
 // Nabber grades.
 #define CULTURE_NABBER_CMINUS "Grade C-"
@@ -200,3 +212,12 @@
 #define FACTION_ASCENT_ALATE     "Ascent Alate"
 #define FACTION_ASCENT_SERPENTID "Ascent Serpentid"
 #define RELIGION_KHARMAANI       "Nest-Lineage Veneration"
+
+// Sergal culture
+#define CULTURE_SERGAL "The Sergals"
+#define HOME_SYSTEM_SERGALTAL "Tal"
+#define FACTION_SERGAL_SHIGU "Shigu Dukedom"
+#define FACTION_SERGAL_GOLD_RING "Gold ring megalopolis"
+#define FACTION_SERGAL_REONO "Reono lands"
+#define RELIGION_SERGAL_ANIMISM "northern religions"
+#define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"

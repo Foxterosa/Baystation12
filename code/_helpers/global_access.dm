@@ -351,6 +351,8 @@
 			return global.csrfz_check;
 		if("custom_event_msg")
 			return global.custom_event_msg;
+		if("custom_species_bases")
+			return global.custom_species_bases;
 		if("damage_icon_parts")
 			return global.damage_icon_parts;
 		if("dbcon")
@@ -389,6 +391,8 @@
 			return global.dreams;
 		if("dummy_lighting_corner")
 			return global.dummy_lighting_corner;
+		if("ear_styles_list")
+			return global.ear_styles_list;
 		if("empty_playable_ai_cores")
 			return global.empty_playable_ai_cores;
 		if("endgame_exits")
@@ -909,7 +913,7 @@
 			return global.z_levels;
 		if("zone_blocked")
 			return global.zone_blocked;
-		
+
 /proc/writeglobal(which, newval)
 	switch(which)
 		if("ANTAG_FREQS")
@@ -1262,6 +1266,8 @@
 			global.csrfz_check=newval;
 		if("custom_event_msg")
 			global.custom_event_msg=newval;
+		if("custom_species_bases")
+			global.custom_species_bases=newval;
 		if("damage_icon_parts")
 			global.damage_icon_parts=newval;
 		if("dbcon")
@@ -1300,6 +1306,8 @@
 			global.dreams=newval;
 		if("dummy_lighting_corner")
 			global.dummy_lighting_corner=newval;
+		if("ear_styles_list")
+			global.ear_styles_list=newval;
 		if("empty_playable_ai_cores")
 			global.empty_playable_ai_cores=newval;
 		if("endgame_exits")
@@ -1820,7 +1828,7 @@
 			global.z_levels=newval;
 		if("zone_blocked")
 			global.zone_blocked=newval;
-		
+
 /var/list/_all_globals=list(
 	"ANTAG_FREQS",
 	"BSACooldown",
@@ -1997,6 +2005,7 @@
 	"crew_repository",
 	"csrfz_check",
 	"custom_event_msg",
+	"custom_species_bases",
 	"damage_icon_parts",
 	"dbcon",
 	"dbcon_old",
@@ -2016,6 +2025,7 @@
 	"doppler_arrays",
 	"dreams",
 	"dummy_lighting_corner",
+	"ear_styles_list",
 	"empty_playable_ai_cores",
 	"endgame_exits",
 	"endgame_safespawns",

@@ -1,20 +1,20 @@
 /decl/cultural_info/religion/unathi
 	name = RELIGION_UNATHI_VINE
-	description = "A faith of farmers, it is preached by semi-nomadic travelers who believe the destruction of Moghes is meant to be a chance for the unathi to \
+	description = "A faith of semi-nomadic travelers who believe the destruction of Moghes is meant to be a chance for the Unathi to \
 	turn it into their own paradise. They're always looking for new ways to grow life on their world and often refer to themselves as \
-	\"her hands\"."
+	'her hands'."
 
 /decl/cultural_info/religion/unathi_precursors
 	name = RELIGION_UNATHI_PRECURSOR
-	description = "Focused primarily with learning and understanding everything they can about the precursors, unathi of this faith \
- want to build a better world for their people with the tools that the precursors left for them."
+	description = "Focused primarily with learning and understanding everything they can about the Precursors, Unathi of this faith want \
+	to make sure that the Unathi do not repeat the mistakes of the past, and want to build a better world for their people with the tools \
+	that the Precursors left for them."
 
 /decl/cultural_info/religion/unathi_strat
 	name = RELIGION_UNATHI_STRATAGEM
-	description = "Conflict and struggle define this faith. Be it war, internal struggle, arguments, or other challenges - to the followers of the grand strategem, \
-	these events should always be opportunities to grow and learn so that you can be the pinnacle of the unathi, and your children can be even stronger. \
-	How else will the unathi defeat the cosmic evil and survive in a world like Moghes?"
-
+	description = "Conflict defines this faith. Be it war, internal struggle, arguments and discourse- to the followers of the Grand \
+	Stratagem these events should always be opportunities to grow and learn so that you can be the pinnacle of the Unathi, and your children \
+	can then be even stronger. How else will the Unathi fully conquer a world like Moghes."
 
 /decl/cultural_info/religion/unathi_lights
 	name = RELIGION_UNATHI_LIGHTS

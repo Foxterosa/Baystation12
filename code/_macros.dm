@@ -101,6 +101,8 @@
 
 #define random_id(key,min_id,max_id) uniqueness_repository.Generate(/datum/uniqueness_generator/id_random, key, min_id, max_id)
 
+#define from_file(file_entry, target_var)                   file_entry >> (target_var)
+
 /// General I/O helpers
 #define to_target(target, payload)            target << (payload)
 #define from_target(target, receiver)         target >> (receiver)

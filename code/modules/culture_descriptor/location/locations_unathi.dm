@@ -1,8 +1,8 @@
 /decl/cultural_info/location/moghes
 	name = HOME_SYSTEM_MOGHES
-	description = "A dead world full of strange, monstrous creatures and mysterious and dangerous landscapes, \
-	this is the home of the unathi. Unathi believe this world was once lush and full of life, but due to the \
-	decisions of the precursors, it was killed and left to rot. For the unathi, it is their duty to bring it \
+	description = "A dead world full of strange, monstrous creatures and mysterious and dangerous landscapes; \
+	this is the home of the Unathi. Unathi believe this world was once lush and full of life, but due to the \
+	decisions of the Precursors, it was killed and left to rot. For the Unathi, it is their duty to bring it \
 	back to life, or to become strong enough that they don't have to."
 	ruling_body = "Clan Hegemony"
 	distance = "20 light-years"
@@ -22,7 +22,7 @@ no clear consensus on how to treat this new world - either as a logical extensio
 or simply as a resource base for improving the home planet. Many colonists, artifact hunters, and ostracised groups have \
 flocked to the planet, with Markesheli communities growing quite rapidly in numbers compared to other parts of Moghes. "
 	ruling_body = "Clan Hegemony"
-	distance = "20 light-years"	
+	distance = "20 light-years"
 	secondary_langs = list(
 		LANGUAGE_UNATHI_SINTA,
 		LANGUAGE_UNATHI_YEOSA,
